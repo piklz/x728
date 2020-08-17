@@ -148,10 +148,10 @@ def my_callback(channel):
 
 GPIO.add_event_detect(6, GPIO.BOTH, callback=my_callback)
 
-print "1.Make sure your power adapter is connected"
+print "1.Make sure your power adapter is connected first (make sure PLD jumper is set as well)"
 print "2.Disconnect and connect the power adapter to test"
 print "3.When power adapter disconnected, you will see: AC Power Loss or Power Adapter Failure"
-print "4.When power adapter disconnected, you will see: AC Power OK, Power Adapter OK"
+print "4.When power adapter is reconnected, you will see: AC Power OK, Power Adapter OK"
 
 raw_input("Testing Started")
 ' > /home/pi/x728pld.py
